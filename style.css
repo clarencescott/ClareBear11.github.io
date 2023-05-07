@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family:monospace;
+    scroll-behavior: smooth;
+}
+::selection{
+    color: black;
+    background-color: rgba(128, 128, 128, 0.751);
+}
+body{
+    background:url(images/background.jpeg);
+    background-position: center;
+    color: white;
+    transition:ease-in-out all 1.7s;
+}
+.intro{
+    box-shadow:inset 0px 0px 90px cyan;
+    height: 100vh;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    text-shadow: 11px 1px 20px rgb(153, 102, 255);
+}
+.intro h1{
+    font-size: 40px;
+    margin-left: 45%;
+    transform: translate(0px,400%);
+    overflow:-moz-hidden-unscrollable;
+}
+#blink{
+    font-size: 40px;
+}
+.selection{
+    padding:8%;
+    height: 80vh;
+}
+.selection h1{
+    text-align:center;
+}
+.courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.resources{
+    padding: 2%;
+    flex: 40%;
+    background-color: rgba(68, 68, 68, 0.513);
+    height: 70vh;
+}
+.book{
+    display: flex;
+    justify-content: space-between;
+}
+.books{
+    background-image:url(images/bookcover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1.5in;
+    width: 1in;
+}
+.class{
+    flex:60%;
+    background-color: rgba(170, 249, 255, 0.377);
+    height: 70vh;
+    padding: 2%;
+}
+.classes{
+    display: flex;
+}
+.course-class{
+    margin: 1%;
+    background-color: black;
+    height: 150px;
+    width: 200px;
+}
+/* Socials Styling Sheet Code */
+.socials{
+    position:fixed;
+    float: left;
+    margin: 2%;
+    width: 4.5%;
+    border-radius: 90px;
+    text-align: center;
+    top: 50%;
+}
+.socials a{
+    text-decoration: none;
+}
+.socials i{
+    display: block;
+    padding: 25%;
+    margin: 2%;
+    font-size: 160%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    color:whitesmoke;
+}
+.socials i:hover{
+    background-color:rgb(134, 134, 134);
+    color: rgb(100, 255, 214);
+} 
+.fa-facebook{
+    background-color: rgb(64, 64, 229);
+}
+.fa-discord{
+    background-color: purple;
+}
+.fa-youtube{
+    background-color: red;
+}
+.fa-linkedin{
+    background-color: navy;
+}
+footer{
+    margin-top: 1%;
+    height: 40vh;
+    background-color: rgba(170, 249, 255, 0.739)
+}
