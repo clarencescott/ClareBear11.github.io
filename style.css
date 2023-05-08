@@ -1,1 +1,13 @@
-
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(220, 191, 227);
+}
+.header-section{
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
