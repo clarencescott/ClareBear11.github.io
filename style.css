@@ -13,8 +13,8 @@ body{
     background-color: slategray;
     text-align: center;
     padding: 2%;
-    padding-top: 6%;
-    color: aliceblue;
+    padding-top: 3%;
+    color: rgb(243, 243, 243);
 }
 .left-section img{
     height: 200px;
@@ -39,8 +39,25 @@ body{
 }
 .menu-btn{
     margin-top: 6%;
-    padding: 4px 50px 4px 50px;
+    padding: 6px 50px 6px 50px;
     border-radius: 5px;
+    background-color: rebeccapurple;
+    color: rgb(243, 243, 243);
+    border: .5px solid black;
+}
+.navigation ul{
+    margin-top: 10%;
+}
+.navigation ul li{
+    list-style-type: none;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 200%;
+    font-size: 120%;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(243, 243, 243);
 }
 .right-section{
     height: 100vh;
