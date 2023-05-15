@@ -10,7 +10,13 @@
 }
 body{
     display: flex;
+    background:url(images/github.io_Background.png);
+    background-size: cover;
+    background-position: center;
 }
+/* Styling section for the left side of the screen.
+This is a fixed section set to 100% view height and has an menu
+ran by javascript. This also includes social media links as well.*/
 .left-section{
     position: fixed;
     height: 100vh;
@@ -34,6 +40,8 @@ body{
     background-color:white;
     margin-bottom: 5%;
 }
+/* The "socials" is a simple menu styling that allows the site visitor
+to access my social media accounts without the hassel.*/
 .socials img{
     height: 42px;
     width: 42px;
@@ -50,6 +58,7 @@ body{
     color: rgb(243, 243, 243);
     border: .5px solid black;
 }
+/* This is styling for the navigation menu located in the left section very simple */
 .navigation ul{
     margin-top: 10%;
 }
@@ -64,13 +73,15 @@ body{
     text-decoration: none;
     color: rgb(243, 243, 243);
 }
+/* Here ends the styling section for the left side and begins the right section styling*/
 .right-section{
-    height: 300vh;
+    height: 200vh;
     margin-left: 300px;
     padding: 0%;
     width: 100%;
     background-color: rgb(169, 180, 192);
 }
+/* About section styling series*/
 .about-section{
     background:url(images/about-section-img.jpeg);
     background-size: cover;
@@ -93,10 +104,12 @@ body{
     color: rgb(246, 246, 246);
     font-weight: bolder;
 }
+/* styling for the project container */
 .project-section{
     height: 100vh;
-    background-color: rgba(102, 51, 153, 0.963);
+    background-color: rgba(33, 2, 63, 0.963);
 }
+/* Here ends the styling section for non mobile view */
 @media screen and (max-width:768px) {
     *{
         margin:0;
