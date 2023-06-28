@@ -5,8 +5,8 @@
     scroll-behavior: smooth;
 }
 ::selection{
-    background-color: rgb(178, 95, 255);
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: green;
 }
 body{
     display: flex;
@@ -21,7 +21,7 @@ ran by javascript. This also includes social media links as well.*/
     position: fixed;
     height: 100vh;
     width: 300px;
-    background-color: slategray;
+    background-color: rgb(77, 62, 93);
     text-align: center;
     padding: 2%;
     padding-top: 3%;
@@ -30,25 +30,40 @@ ran by javascript. This also includes social media links as well.*/
 .left-section img{
     height: 200px;
     width: 200px;
-    background-color: rebeccapurple;
     border-radius: 180px;
     border: solid white;
     box-shadow: 0px 0px 10px white;
 }
 .left-section hr{
     margin-top: 3%;
-    background-color:white;
     margin-bottom: 5%;
 }
 /* The "socials" is a simple menu styling that allows the site visitor
 to access my social media accounts without the hassel.*/
-.socials img{
-    height: 42px;
-    width: 42px;
+.socials .fa-brands{
+    height: auto;
+    width: 40px;
+    font-size: 40px;
     border-radius: 0px;
     border: none;
+    color: white;
     box-shadow: none;
-    background-color:rgba(240, 248, 255, 0);
+    transition: all .6s ease-in-out;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-github:hover{
+    color: rgb(234, 97, 255);
+}
+.fa-instagram:hover{
+    color: rgb(255, 182, 10);
+}
+.fa-linkedin:hover{
+    color: rgb(112, 250, 255);
+}
+.fa-youtube:hover{
+    color: rgb(255, 0, 0);
 }
 .menu-btn{
     margin-top: 6%;
@@ -57,6 +72,13 @@ to access my social media accounts without the hassel.*/
     background-color: rebeccapurple;
     color: rgb(243, 243, 243);
     border: .5px solid black;
+}
+.menu-btn:hover{
+    color: rgb(26, 25, 25);
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: .6s all ease-in-out;
 }
 /* This is styling for the navigation menu located in the left section very simple */
 .navigation ul{
@@ -72,6 +94,13 @@ to access my social media accounts without the hassel.*/
 .navigation ul li a{
     text-decoration: none;
     color: rgb(243, 243, 243);
+}
+.navigation ul:hover li a{
+    filter: blur(2px);
+}
+.navigation ul li a:hover{
+    text-decoration: underline 2px purple;
+    filter: blur(0px);
 }
 /* Here ends the styling section for the left side and begins the right section styling*/
 .right-section{
@@ -90,7 +119,7 @@ to access my social media accounts without the hassel.*/
     height: 90vh
 }
 .about-section-info{
-    background-color: rgba(112, 128, 144, 0.919);
+    background-color: rgba(83, 89, 96, 0.919);
     height: 90vh;
     width: 100%;
     padding: 2%;
@@ -100,7 +129,7 @@ to access my social media accounts without the hassel.*/
 }
 .about-section-info p{
     margin: 1.5%;
-    font-size: 150%;
+    font-size: 26px;
     color: rgb(246, 246, 246);
     font-weight: bolder;
 }
@@ -110,7 +139,7 @@ to access my social media accounts without the hassel.*/
     background-color: rgba(33, 2, 63, 0.963);
 }
 /* Here ends the styling section for non mobile view */
-@media screen and (max-width:768px) {
+@media screen and (max-width:898px) {
     *{
         margin:0;
         padding:0;
