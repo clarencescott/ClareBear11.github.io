@@ -48,7 +48,7 @@ to access my social media accounts without the hassel.*/
     border: none;
     color: white;
     box-shadow: none;
-    transition: all .6s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .fa-facebook:hover{
     color: blue;
