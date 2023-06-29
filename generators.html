@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Username Generator</title>
+</head>
+<body>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+  }
+  .passh1,.userh1 {
+    margin-top: 50px;
+      text-align: center
+  }
+  #generator {
+    margin: 20px auto;
+    width: 500px;
+    padding: 10px;
+    height: 200px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  #result {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .userBtn {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background:linear-gradient(rgb(35, 101, 55),rgb(12, 155, 61));
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #password {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  .passBtn {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background:linear-gradient(rgb(235, 191, 255),rgb(182, 255, 251));
+    color: black;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .passBtn:hover {
+    background:linear-gradient(rgb(127, 28, 173),rgb(29, 175, 167));
+    color: whitesmoke;
+  }
+    </style>
+    <a href="index.html">HOME</a>
+  <h1 class="passh1">Password/Username Generator</h1>  <!--- JavaScript for the generator. I will be adding a database for unique usernames and emails.-->
+  <div id="generator">
+  <input type="text" id="password" readonly>
+  <button class="passBtn" onclick="generatePassword()">Generate Password</button>
+    <button class="userBtn" onclick="generateUsername()">Generate Username</button>
+    <div id="result"></div>
+  </div>
+  <script>
+    var adjectives = [
+        "happy",
+        "silly", 
+        "crazy", 
+        "colorful", 
+        "funny", 
+        "friendly", 
+        "awesome", 
+        "sparkling", 
+        "joyful", 
+        "playful"
+    ];
+    var nouns = [
+        "cat", 
+        "dog", 
+        "penguin", 
+        "elephant", 
+        "dolphin", 
+        "unicorn", 
+        "dragon", 
+        "monkey", 
+        "tiger", 
+        "koala"
+    ];
+
+    function generateUsername() {
+      var randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+      var randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
+      var username = randomAdjective + "_" + randomNoun;
+      document.getElementById("result").innerHTML = username;
+    }
+      
+      
+    function generatePassword() {
+      var length = prompt("How long do you want your password?");
+      var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*();:{}[]-=+";
+      var password = " ";
+      for (var i = 0, n = charset.length; i < length; ++i) {
+        password += charset.charAt(Math.floor(Math.random() * n));
+      }
+      document.getElementById("password").value = password;
+    }
+  </script>
+</body>
+</html>

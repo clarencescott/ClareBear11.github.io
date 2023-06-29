@@ -102,6 +102,13 @@ to access my social media accounts without the hassel.*/
     text-decoration: underline 2px purple;
     filter: blur(0px);
 }
+.quick-link{
+    margin-top: 50px;
+}
+.quick-link a{
+    color: wheat;
+    font-size: 20px;
+}
 /* Here ends the styling section for the left side and begins the right section styling*/
 .right-section{
     height: 200vh;
