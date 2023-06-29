@@ -220,6 +220,9 @@ to access my social media accounts without the hassel.*/
         color: rgb(243, 243, 243);
         margin-left: 3%;
     }
+    .quick-link{
+        margin-top: 0px;
+    }
     .right-section{
         position:inherit;
         height: 200vh;
