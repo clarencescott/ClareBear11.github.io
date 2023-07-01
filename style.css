@@ -136,9 +136,10 @@ to access my social media accounts without the hassel.*/
 }
 .about-section-info p{
     margin: 1.5%;
-    font-size: 24px;
+    font-size: 1.4rem;
     color: rgb(246, 246, 246);
     font-weight: bolder;
+    overflow: scroll;
 }
 /* styling for the project container */
 .project-section{
