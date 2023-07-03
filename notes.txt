@@ -1,0 +1,322 @@
+<!--- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/533dc27598.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>Clare Bear's Portfolio</title>
+</head>
+<body>
+    <div class="left-section">
+        <div class="left-section-items">
+            <img src="images/ClareBearGH_Avatar.png" alt="" srcset="">
+            <h1>Clarence Scott</h1>
+            <h3>Software Engineer</h3>
+            <hr>
+            <div class="socials" id="socials">
+                <a href="https://www.facebook.com/AstroClareTech/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/ClareBear11" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/astrobrew_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/clarence-scott/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@astroclaretech2469" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="menu-btn" id="menu" onclick="showNav()">MENU</button>
+            <ul id="nav" style="display:none;">
+                <li><a href="#about-section">about</a></li>
+                <li><a href="#project-section">projects</a></li>
+                <li><a href="#">experience</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <ul class="quick-link">
+            <li><a href="generators.html" target="_blank">Password/Username Generator</a></li>
+        </ul>
+    </div>
+    <div class="right-section">
+        <div class="about-section" id="about-section">
+            <div class="about-section-info about-1" id="about-secton-info-1">
+                <p><b style="font-size: 130%;">Hello!<br>My name is <cb style="font-size: 160%;color: rebeccapurple;text-shadow: 0px 0px 8px white;">Clare Bear</cb></b><br><br>I am a software engineer with expertise in IT, Cybersecurity, and PC Technician services. I have been working in the tech industry for over a decade and have gained extensive experience in various domains.</p>
+                <p>As an IT professional, I have a deep understanding of the inner workings of computer systems and networks. I have worked on numerous projects involving network infrastructure design, hardware maintenance, and software troubleshooting. My experience has taught me how to quickly diagnose and resolve IT-related issues, ensuring that businesses can operate efficiently and effectively. </p>
+                <p>In addition to my IT skills, I am skilled in Cybersecurity. I understand the importance of securing sensitive data and ensuring that networks are protected from cyber attacks. I have experience implementing security protocols, monitoring networks for suspicious activity, and mitigating potential threats. My experience in Cybersecurity has given me a unique perspective on the importance of secure coding practices and maintaining the integrity of software systems.</p>
+                <p>Lastly, I am also an experienced PC Technician. I have helped numerous clients diagnose and repair hardware issues, install new software and hardware components, and provide training on how to use software effectively. I have a passion for helping people get the most out of their technology, and I always strive to deliver exceptional service.</p>
+                <p>When I'm not working, I enjoy spending time with my family & friends, playing video games, enjoying nature or reading books. I am always looking for new opportunities to learn and grow, and I am excited to bring my skills and experience to new challenges.</p>
+                <p>If you're interested in working with me or have any questions about my expertise, please don't hesitate to get in touch. I'm always happy to chat!</p>
+            </div>
+            <div class="about-section-info about-2" id="about-section-info-2">
+                <p> I am an software engineer with over a decade of experience in the tech industry. I have expertise in IT, Cybersecurity, and PC Technician services, and has worked on a wide range of projects, from network infrastructure design to enterprise-level software systems.</p><p> I’m well known for my ability to quickly diagnose and resolve technical issues, and passion for secure coding practices, as well as exceptional customer service. I enjoy exploring the outdoors, playing video games, and is always looking for new opportunities to learn and grow. If you're interested in working with me or have any questions about my experience and skills, please don't hesitate to get in touch! </p>
+            </div>
+        </div>
+        <div class="project-section" id="project-section">
+            <div class="project-section-info" id="project-section-info">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>--->
+<!----
+<style>*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: rgb(0, 0, 0);
+    color: green;
+}
+body{
+    display: flex;
+    background:url(images/github.io_Background.png);
+    background-size: cover;
+    background-position: center;
+}
+/* Styling section for the left side of the screen.
+This is a fixed section set to 100% view height and has an menu
+ran by javascript. This also includes social media links as well.*/
+.left-section{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(77, 62, 93);
+    text-align: center;
+    padding: 2%;
+    padding-top: 3%;
+    color: rgb(243, 243, 243);
+}
+.left-section img{
+    height: 200px;
+    width: 200px;
+    border-radius: 180px;
+    border: solid white;
+    box-shadow: 0px 0px 10px white;
+}
+.left-section hr{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+/* The "socials" is a simple menu styling that allows the site visitor
+to access my social media accounts without the hassel.*/
+.socials .fa-brands{
+    height: auto;
+    width: 40px;
+    font-size: 40px;
+    border-radius: 0px;
+    border: none;
+    color: white;
+    box-shadow: none;
+    transition: all .5s ease-in-out;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-github:hover{
+    color: rgb(234, 97, 255);
+}
+.fa-instagram:hover{
+    color: rgb(255, 182, 10);
+}
+.fa-linkedin:hover{
+    color: rgb(112, 250, 255);
+}
+.fa-youtube:hover{
+    color: rgb(255, 0, 0);
+}
+.menu-btn{
+    margin-top: 6%;
+    padding: 6px 50px 6px 50px;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+    color: rgb(243, 243, 243);
+    border: .5px solid black;
+}
+.menu-btn:hover{
+    color: rgb(26, 25, 25);
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: .6s all ease-in-out;
+}
+/* This is styling for the navigation menu located in the left section very simple */
+.navigation ul{
+    margin-top: 10%;
+}
+.navigation ul li{
+    list-style-type: none;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 200%;
+    font-size: 120%;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+}
+.navigation ul:hover li a{
+    filter: blur(2px);
+}
+.navigation ul li a:hover{
+    text-decoration: underline 2px purple;
+    filter: blur(0px);
+}
+.quick-link{
+    margin-top: 50px;
+}
+.quick-link a{
+    color: wheat;
+    font-size: 20px;
+}
+/* Here ends the styling section for the left side and begins the right section styling*/
+.right-section{
+    height: 200vh;
+    margin-left: 300px;
+    padding: 0%;
+    width: 100%;
+    background-color: rgb(169, 180, 192);
+}
+/* About section styling series*/
+.about-section{
+    background:url(images/about-section-img.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh
+}
+.about-section-info{
+    background-color: rgba(83, 89, 96, 0.919);
+    height: 90vh;
+    width: 100%;
+    padding: 2%;
+}
+.about-2{
+    display: none;
+}
+.about-section-info p{
+    margin: 1.5%;
+    font-size: 1.4rem;
+    color: rgb(246, 246, 246);
+    font-weight: bolder;
+}
+/* styling for the project container */
+.project-section{
+    height: 110vh;
+    background-color: rgba(86, 68, 105, 0.963);
+}
+/* Here ends the styling section for non mobile view */
+@media screen and (max-width:898px) {
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        display: inline;
+    }
+    .left-section{
+        position: sticky;
+        height: 20vh;
+        width: 100%;
+        background-color: slategray;
+        text-align: center;
+        padding: 3%;
+        padding-top: 2%;
+        color: rgb(243, 243, 243);
+    }
+    .left-section img{
+        float: left;
+        height: 50px;
+        width: 50px;
+        border-radius: 180px;
+        border: solid white;
+        box-shadow: 0px 0px 10px white;
+    }
+    .left-section hr{
+        margin-top: 0.5%;
+        background-color:white;
+        margin-bottom: 0.5%;
+    }
+    .socials{
+        width: 100%;
+    }
+    .socials img{
+        float: none;
+        display: inherit;
+        height: 24px;
+        width: 24px;
+        border-radius: 0px;
+        margin-left: 3%;
+        margin-right: 3%;
+        border: none;
+        box-shadow: none;
+        background-color:rgba(240, 248, 255, 0);
+    }
+    .menu-btn{
+        margin-top: 1%;
+        padding: 3px 10px 3px 10px;
+        border-radius: 5px;
+        background-color: rebeccapurple;
+        color: rgb(243, 243, 243);
+        border: .5px solid black;
+        float: left;
+    }
+    .navigation ul{
+        margin-top: 0%;
+        float: right;
+        width: 100%;
+    }
+    .navigation ul li{
+        display: inline;
+        list-style-type: none;
+        text-align: left;
+        text-transform:capitalize;
+        line-height: 0%;
+        font-size: 90%;
+    }
+    .navigation ul li a{
+        text-decoration: none;
+        color: rgb(243, 243, 243);
+        margin-left: 3%;
+    }
+    .quick-link{
+        margin-top: 0px;
+    }
+    .right-section{
+        position:inherit;
+        height: 200vh;
+        margin-left: 0px;
+        width: 100%;
+        background-color: rgb(169, 180, 192);
+    }
+    .about-section{
+        background:url(images/about-section-img.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 60vh
+    }
+    .about-section-info{
+        background-color: rgba(112, 128, 144, 0.919);
+        height: 60vh;
+        width: 100%;
+        padding: 4%;
+    }
+    .about-1{
+        display: none;
+    }
+    .about-2{
+        display: block;
+    }
+    .about-section-info p{
+        margin: 5%;
+        text-align: center;
+        font-size: 110%;
+        color: rgb(246, 246, 246);
+        font-weight: bolder;
+    }
+}</style>
