@@ -26,24 +26,83 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(145, 99, 185, 0.717);
+    background-color: #8d7b68d5;
     width: 100vw;
     font-size: 52px;
     text-transform: uppercase;
     color: white;
-    text-shadow: black 0px 0px 30px;
+    text-shadow: rgb(97, 21, 58) 0px 0px 30px;
 }
 .about-section{
-    background:linear-gradient(to bottom, rgb(14, 0, 27), rgb(201, 144, 255));
+    background:linear-gradient(to bottom, rgb(141, 123, 104), rgb(200, 182, 166));
     height: 100vh;
     padding: 40px 150px 40px 150px;
 }
 .about-section-info{
-    font-size: 32px;
+    font-size: 26px;
     text-transform: capitalize;
     color: lightgrey;
 }
 .projects-section{
     height: 100vh;
-    background:linear-gradient(to bottom, rgb(201, 144, 254), rgb(14, 0, 27))
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom, rgb(200, 182, 166), rgb(141, 123, 104));
+    padding:40px 150px 40px 150px;
+}
+.project-sections-info{
+    height: 90vh;
+    text-align: center;
+}
+.project-sections-info h1{
+    font-size: 30px;
+}
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4%;
+}
+.project{
+    height: 375px;
+    width: 300px;
+    border: rgb(97, 21, 58) 5px solid;
+    border-radius: 20px;
+}
+/* Here I will add detail to how I am creating the code for the project cards, they will use CSS and 
+javascript coding to excute proper UX */
+
+/* I suck at this technique but I will do my best lol*/
+
+.project .descriptor{
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+.project .descriptor:hover p{
+    animation: descCover 1s ease-in-out 1s;
+}
+@keyframes descCover {
+    0%  {color: rgba(200, 182, 166, 0);transform: translate(-50px,0px);opacity: 0%;}
+    50%  {color: rgba(200, 182, 166, 0);transform: translate(-20px,0px);opacity: 33%;}
+    70%  {color: rgb(0, 0, 0);transform: translate(-5px,0px);opacity: 66%;}
+    100% {color: black;transform: translate(0px,0px);opacity: 100%;}
+ }
+ 
+.project .action{
+    display: flex;
+    height: 60px;
+    width: auto;
+    border-radius: 0px 0px 20px 20px;
+}
+.project .source-code, .project .source-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+    color: white;
+    background-color: black;
+    border-radius: 180px;
+
 }
