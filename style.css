@@ -65,8 +65,8 @@ body{
     margin: 4%;
 }
 .project{
-    height: 375px;
-    width: 300px;
+    height: 275px;
+    width: 200px;
     border: rgb(97, 21, 58) 5px solid;
     border-radius: 20px;
 }
@@ -76,7 +76,7 @@ javascript coding to excute proper UX */
 /* I suck at this technique but I will do my best lol*/
 
 .project .descriptor{
-    height: 300px;
+    height: 200px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
