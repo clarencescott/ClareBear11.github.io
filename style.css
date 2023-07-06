@@ -86,8 +86,10 @@ Instead I went with a hover effect and placed the overflow in a hidden rule.*/
 }
 .project:hover .descriptor{
     opacity: 100%;
-    transform: translateY(50px);
+    transform: translateY(0px);
     transition: all .3s ease-in-out;
+    background-color: white;
+    padding: 5%;
 }
 .project:hover{
     scale: 1.2;
@@ -109,7 +111,7 @@ Instead I went with a hover effect and placed the overflow in a hidden rule.*/
     width: auto;
     border-radius: 0px 0px 20px 20px;
 }
-.project .source-code, .source-project{
+.project .source-code,.project .source-project{
     flex: 50%;
     height: 100px;
     display: flex;
@@ -119,4 +121,13 @@ Instead I went with a hover effect and placed the overflow in a hidden rule.*/
     color: white;
     background-color: black;
 
+}
+.project .action a{
+    color: white;
+    text-align: center;
+}
+.project:hover .action a{
+    transform: translateY(-20px);
+    color: rgb(231, 18, 121);
+    text-decoration: none;
 }
