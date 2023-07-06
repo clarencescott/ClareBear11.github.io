@@ -39,7 +39,7 @@ body{
     padding: 40px 150px 40px 150px;
 }
 .about-section-info{
-    font-size: 26px;
+    font-size: 24px;
     text-transform: capitalize;
     color: lightgrey;
 }
@@ -69,40 +69,54 @@ body{
     width: 200px;
     border: rgb(97, 21, 58) 5px solid;
     border-radius: 20px;
+    overflow: hidden;
 }
 /* Here I will add detail to how I am creating the code for the project cards, they will use CSS and 
 javascript coding to excute proper UX */
 
 /* I suck at this technique but I will do my best lol*/
 
+/* I initially used a key frame code but when migrating the commit to github, it did not work as planned.
+Instead I went with a hover effect and placed the overflow in a hidden rule.*/
+
 .project .descriptor{
     height: 200px;
     border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
+    transform: translateY(-900px);
 }
-.project .descriptor:hover p{
-    animation: descCover 1s ease-in-out 1s;
+.project:hover .descriptor{
+    opacity: 100%;
+    transform: translateY(50px);
+    transition: all .3s ease-in-out;
 }
-@keyframes descCover {
+.project:hover{
+    scale: 1.2;
+    border: 2px solid rgb(97, 21, 58);
+    box-shadow: 0px 0px 20px rgb(97, 21, 58);
+}
+
+/*@keyframes descCover {
     0%  {color: rgba(200, 182, 166, 0);transform: translate(-50px,0px);opacity: 0%;}
     50%  {color: rgba(200, 182, 166, 0);transform: translate(-20px,0px);opacity: 33%;}
     70%  {color: rgb(0, 0, 0);transform: translate(-5px,0px);opacity: 66%;}
     100% {color: black;transform: translate(0px,0px);opacity: 100%;}
- }
+ }*/
  
 .project .action{
     display: flex;
-    height: 60px;
+    height: 100px;
+    text-align: center;
     width: auto;
     border-radius: 0px 0px 20px 20px;
 }
-.project .source-code, .project .source-project{
+.project .source-code, .source-project{
+    flex: 50%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 50%;
+    text-align: center;
     color: white;
     background-color: black;
-    border-radius: 180px;
 
 }
