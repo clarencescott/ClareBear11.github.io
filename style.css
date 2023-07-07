@@ -83,11 +83,12 @@ Instead I went with a hover effect and placed the overflow in a hidden rule.*/
     height: 200px;
     border-radius: 20px 20px 0px 0px;
     transform: translateY(-900px);
+    transition: all .4s ease-in;
 }
 .project:hover .descriptor{
     opacity: 100%;
     transform: translateY(0px);
-    transition: all .3s ease-in-out;
+    transition: all 1s ease-out;
     background-color: white;
     padding: 5%;
 }
@@ -95,6 +96,7 @@ Instead I went with a hover effect and placed the overflow in a hidden rule.*/
     scale: 1.2;
     border: 2px solid rgb(97, 21, 58);
     box-shadow: 0px 0px 20px rgb(97, 21, 58);
+    transition: all .6s ease-out;
 }
 
 /*@keyframes descCover {
