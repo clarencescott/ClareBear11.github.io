@@ -181,3 +181,201 @@ footer{
     font-size: 22px;
     font-weight: bold;
 }
+/* Phone Screen Repsonsive Styling Sheet */
+
+@media screen and (min-width:320px) and (max-width:480px){
+    ::selection{
+        background-color: #614d0e;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body{
+       background-color: #1b3856;
+       height: 100vh;
+    }
+    /* Header and Navigation Styling Section (COMBINED) */
+    .header{
+        background-color: #1b3856;
+        height: 10vh;
+        padding: 30px;
+    }
+    .header h1{
+        color: #ffcb2e;
+        text-shadow:0px 0px 3px #d1e7ff;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .navigation{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .navigation li{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .navigation li a{
+        font-size: 16px;
+        color: #fedc75;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all .8s ease-in;
+        border-bottom: solid rgba(255, 255, 255, 0) 2px;
+    }
+    .navigation li a:hover{
+        border-bottom: white solid 2px;
+        transition: all .8s ease-out;
+    }
+    /* Introduction paragraph (HOME) Styling Section */
+    .intro{
+        height: 60vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        width: 100vw;
+        margin: 0 auto;
+        letter-spacing: 1px;
+    }
+    .intro p{
+        width: 90vw;
+        margin-top: 2vh;
+    }
+    /* Video Styling Section */
+    .video-intro{
+        height: 50vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 28px;
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .video-intro video{
+        height: 25vh;
+    }
+    /* Horizontal Line Universal Styling Section*/
+    hr{
+        width: 80%;
+        margin: 0 auto;
+        background-color: #c6ac60;
+        border-color: #d2b359;
+    }
+    /* Assignments Styling Section */
+    .assignments{
+        height: 60vh;
+    }
+    .assignments-tab{
+        height: 30vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    .tab{
+        height: 20vh;
+        width: 50vw;
+    }
+    .tab a img{
+        height: 10vh;
+        border-radius: 4px;
+        width: auto;
+        transition: all .5s ease-in-out;
+        border: solid 1px white;
+    }
+    .tab a img:hover{
+        scale: 1.2;
+        transition: all .5s ease-in-out;
+        box-shadow: 0px 0px 100px #fff5d663;
+        border: none;
+        color: white;
+    }
+    /* Contact Styling Section */
+    .contact{
+        height: 105vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    input[type="submit"]{
+        border: #fedc75 solid 2px;
+        background-color: #d2b359;
+        color: black;
+        width: 200px;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: all .5s ease-in;
+    }
+    input[type="submit"]:hover{
+        background-color: black;
+        color: #fedc75;
+        width: 200px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+    map{
+        width: 90vw;
+    }
+    map iframe{
+        margin: 0 auto;
+        height: 250px;
+        width: 90vw;
+    }
+    form{
+        width: 90vw;
+        margin: 0 auto;
+        padding: 1em;
+        margin-top: 5px;
+    }
+    form label{
+        display: block;
+        padding: .5em;
+        font-size: 24px;
+        color: beige;
+    }
+    form input{
+        width: 80vw;
+        height: 30px;
+        font-size: 22px;
+        margin: 5px;
+    }
+    form textarea{
+        height:200px;
+        width: 80vw;
+        font-size: 22px;
+    }
+    form input, textarea{
+        border: none;
+        border-bottom: #fedc75 solid 2px;
+        background-color: #142a41;
+        outline: none;
+        color: #d2b359;
+    }
+    footer{
+        text-align: center;
+        background-color: #c6ac60;
+        padding: .3em;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
