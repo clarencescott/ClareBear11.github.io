@@ -276,10 +276,12 @@ footer{
     }
     /* Assignments Styling Section */
     .assignments{
-        height: 60vh;
+        height: 120vh;
+        padding: 1em;
+        margin: 0 auto;
     }
     .assignments-tab{
-        height: 30vh;
+        height: 40vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -291,12 +293,12 @@ footer{
     }
     .tab{
         height: 20vh;
-        width: 50vw;
+        width: 60vw;
     }
     .tab a img{
-        height: 10vh;
+        height: 12vh;
         border-radius: 4px;
-        width: auto;
+        width: 200px;
         transition: all .5s ease-in-out;
         border: solid 1px white;
     }
@@ -321,9 +323,13 @@ footer{
         border: #fedc75 solid 2px;
         background-color: #d2b359;
         color: black;
-        width: 200px;
+        width: 125px;
+        border-radius: 4px;
         margin: 0 auto;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition: all .5s ease-in;
     }
     input[type="submit"]:hover{
@@ -348,20 +354,21 @@ footer{
         margin-top: 5px;
     }
     form label{
+        text-align: center;
         display: block;
-        padding: .5em;
+        padding: .8em;
         font-size: 24px;
         color: beige;
     }
     form input{
-        width: 80vw;
-        height: 30px;
+        width: 70vw;
+        height: 28px;
         font-size: 22px;
         margin: 5px;
     }
     form textarea{
-        height:200px;
-        width: 80vw;
+        height:100px;
+        width: 70vw;
         font-size: 22px;
     }
     form input, textarea{
@@ -375,7 +382,7 @@ footer{
         text-align: center;
         background-color: #c6ac60;
         padding: .3em;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: bolder;
     }
 }
