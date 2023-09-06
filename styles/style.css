@@ -8,12 +8,12 @@
     scroll-behavior: smooth;
 }
 body{
-   background-color: #1b3856;
+   background-color: #011a36;
    height: 100vh;
 }
 /* Header and Navigation Styling Section (COMBINED) */
 .header{
-    background-color: #1b3856;
+    background-color: #011a36;
     height: 10vh;
     padding: 30px;
 }
@@ -194,12 +194,12 @@ footer{
         scroll-behavior: smooth;
     }
     body{
-       background-color: #1b3856;
+       background-color: #011a36;
        height: 100vh;
     }
     /* Header and Navigation Styling Section (COMBINED) */
     .header{
-        background-color: #1b3856;
+        background-color: #011a36;
         height: 10vh;
         padding: 30px;
     }
