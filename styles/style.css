@@ -96,8 +96,8 @@ hr{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 3px;
     padding: 20px;
+    padding-bottom: 10px;
 }
 .tab{
     height: 20vh;
