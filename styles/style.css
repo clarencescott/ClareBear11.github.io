@@ -294,6 +294,7 @@ footer{
     .tab{
         height: 20vh;
         width: 60vw;
+        margin: 3px;
     }
     .tab a img{
         height: 12vh;
